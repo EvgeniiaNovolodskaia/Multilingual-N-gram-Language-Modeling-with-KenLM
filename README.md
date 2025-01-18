@@ -16,3 +16,17 @@ This project explores multilingual text processing and analysis using **KenLM**,
 
 4. **Visualization:**
    - Results are visualized using **Matplotlib** and **Seaborn** to show the correlation between TTR, Perplexity, and linguistic typology.
+  
+
+### Installing KenLM
+
+KenLM must be installed from source. Follow these steps:
+
+```bash
+git clone https://github.com/kpu/kenlm.git
+cd kenlm
+python setup.py develop
+mkdir -p build
+cd build
+cmake ..
+make -j4
